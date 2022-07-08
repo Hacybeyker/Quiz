@@ -43,14 +43,13 @@ android {
     }
 
     signingConfigs {
-        //TODO change to your app name
         create("release") {
-            keyAlias = findProperty("SIGNING_KEY_ALIAS_YOUR") as String?
+            keyAlias = findProperty("SIGNING_KEY_ALIAS_QUIZ") as String?
                 ?: System.getenv("SIGNING_KEY_ALIAS")
-            keyPassword = findProperty("SIGNING_KEY_PASSWORD_YOUR") as String?
+            keyPassword = findProperty("SIGNING_KEY_PASSWORD_HACYBEYKER") as String?
                 ?: System.getenv("SIGNING_KEY_PASSWORD")
-            storeFile = file("../.signing/release-your-key.jks")
-            storePassword = findProperty("SIGNING_STORE_PASSWORD_YOUR") as String?
+            storeFile = file("../.signing/release-quiz-key.jks")
+            storePassword = findProperty("SIGNING_STORE_PASSWORD_HACYBEYKER") as String?
                 ?: System.getenv("SIGNING_STORE_PASSWORD")
         }
     }
@@ -222,8 +221,7 @@ dependencies {
     testImplementation(TestDependencies.coreKtx)
     testImplementation(TestDependencies.junitKtx)
     testImplementation(TestDependencies.kotlinCoroutines)
-    testImplementation(TestDependencies.mockitoKotlin)
-    testImplementation(TestDependencies.mockitoInline)
+    testImplementation(TestDependencies.mockK)
     androidTestImplementation(TestDependencies.extJUnit)
     androidTestImplementation(TestDependencies.espressoCore)
     // Chucker

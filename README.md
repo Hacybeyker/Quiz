@@ -1,6 +1,8 @@
-# Project [name_project]
+# Project: Quiz
 
-Description for project.
+![GithubActions](https://github.com/hacybeyker/Quiz/actions/workflows/android_publish.yml/badge.svg?branch=master) ![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=app-quiz-android&metric=alert_status)
+
+Quiz game, select the correct answer...earn points and have fun.
 
 ## Setup
 
@@ -11,22 +13,15 @@ git submodule init
 git submodule update
 ```
 
-2. Add variables in `local.properties`.
-
-```bash
-   KEY_PROD=YOUR_KEY  
-   KEY_QA=YOUR_KEY
-```
-
 ## Tools
 
 ### Project
 - Kotlin
 - Hilt
-- Mockito
+- MockK
 - Coroutines
 - Retrofit
-- Glide
+- Room
 
 ### Support
 - Lint
@@ -46,7 +41,7 @@ git submodule update
 
 ## Apis
 
-For this project was used api ...
+In this project no external apis is used, only the local database is used
 
 ## Images
 

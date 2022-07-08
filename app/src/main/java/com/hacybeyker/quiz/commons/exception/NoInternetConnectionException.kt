@@ -1,4 +1,4 @@
-package com.hacybeyker.main.commons.exception
+package com.hacybeyker.quiz.commons.exception
 
 import java.io.IOException
 

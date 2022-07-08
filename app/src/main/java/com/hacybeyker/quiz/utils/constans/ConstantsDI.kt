@@ -1,4 +1,4 @@
-package com.hacybeyker.main.utils.constans
+package com.hacybeyker.quiz.utils.constans
 
 object ConstantsDI {
     object Named {

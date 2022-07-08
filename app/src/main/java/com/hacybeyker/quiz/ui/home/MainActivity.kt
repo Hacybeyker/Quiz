@@ -1,8 +1,8 @@
-package com.hacybeyker.main.ui.home
+package com.hacybeyker.quiz.ui.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.hacybeyker.main.R
+import com.hacybeyker.quiz.R
 
 class MainActivity : AppCompatActivity() {
 

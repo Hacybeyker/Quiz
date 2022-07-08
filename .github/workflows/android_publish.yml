@@ -138,7 +138,6 @@ jobs:
         uses: r0adkll/upload-google-play@v1.0.17
         with:
           serviceAccountJsonPlainText: ${{ secrets.SIGNING_SERVICE_ACCOUNT }}
-          #TODO change for your packageName
-          packageName: com.your.package
+          packageName: com.hacybeyker.quiz
           releaseFiles: ./app/build/outputs/bundle/release/app-release.aab
           track: alpha
