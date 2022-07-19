@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name" translatable="false">Quiz</string>
-    <string name="hello_world">Hola Mundo!</string>
+    <string name="app_name">Quiz</string>
+    <string name="home">Inicio</string>
+    <string name="learned">Aprendido</string>
+    <string name="learned_empty">De momento aún no tienes ninguna palabra aprendida</string>
+    <string name="level_result_time"><![CDATA[<b>Tiempo:</b> %1$s min]]></string>
+    <string name="level_result_statistics"><![CDATA[<b>Estadistica:</b> %1$s/%2$s]]></string>
+    <string name="check">Comprobar</string>
 </resources>

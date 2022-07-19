@@ -172,13 +172,13 @@ android {
         outputFormat = "png"
     }
 
-    tasks {
+    /*tasks {
         "preBuild" {
             dependsOn("ktlintFormat")
             dependsOn("ktlintCheck")
             dependsOn("detekt")
         }
-    }
+    }*/
 }
 
 dependencies {
@@ -192,6 +192,9 @@ dependencies {
     implementation(AppDependencies.viewPager2)
     // Hilt
     implementation(AppDependencies.hilt)
+    implementation("androidx.appcompat:appcompat:1.4.2")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     kapt(AppDependencies.hiltCompiler)
     // ViewModel & Livedata
     implementation(AppDependencies.lifecycleViewModel)
@@ -230,4 +233,8 @@ dependencies {
     releaseImplementation(AppDependencies.chuckerNoOp)
     // Detekt
     detektPlugins(ValidationDependencies.detekt)
+
+    // UiKit
+    implementation("com.hacybeyker.android:uikit:1.1.0-feature-search-component-SNAPSHOT@aar")
+    implementation("com.hacybeyker.android:commons:1.0.0@aar")
 }

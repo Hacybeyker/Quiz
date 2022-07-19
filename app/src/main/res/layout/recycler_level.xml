@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mcLevel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp20"
+    android:backgroundTint="#b3e5fc"
+    android:checkable="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="@dimen/dp5"
+    app:rippleColor="@color/white"
+    app:strokeColor="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLevelCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="@dimen/sp18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fruits" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLevelName"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="end"
+            android:textSize="@dimen/sp12"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/clLevelResultContainer"
+            app:layout_constraintTop_toBottomOf="@id/tvLevelDescription"
+            tools:text="Level 1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivLevelImage"
+            android:layout_width="@dimen/dp64"
+            android:layout_height="@dimen/dp64"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp20"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvLevelDescription"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_fruit" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLevelDescription"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/montserrat_normal"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintEnd_toStartOf="@id/ivLevelImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLevelCategory"
+            tools:text="Aprenderás la traduccion de algunas frutas." />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clLevelResultContainer"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp20"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ivLevelImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLevelDescription">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLevelTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_normal"
+                android:text="@string/level_result_time"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvLevelStatistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp20"
+                android:fontFamily="@font/montserrat_normal"
+                android:text="@string/level_result_statistics"
+                android:textSize="@dimen/sp12"
+                app:layout_constraintStart_toEndOf="@id/tvLevelTime"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

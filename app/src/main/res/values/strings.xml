@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Quiz</string>
-    <string name="hello_world">Hello World!</string>
+    <string name="home">Home</string>
+    <string name="learned">Learned</string>
+    <string name="learned_empty">At the moment you have not learned any words yet</string>
+    <string name="level_result_time"><![CDATA[<b>Time:</b> %1$s min]]></string>
+    <string name="level_result_statistics"><![CDATA[<b>Statistics:</b> %1$s/%2$s]]></string>
+    <string name="check">Check</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

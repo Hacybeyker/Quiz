@@ -8,7 +8,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.LargeTest
-import com.hacybeyker.quiz.ui.home.MainActivity
+import com.hacybeyker.quiz.ui.home.HomeActivity
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -18,7 +18,7 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
     @get:Rule
-    val activityScenarioRule = ActivityScenarioRule(MainActivity::class.java)
+    val activityScenarioRule = ActivityScenarioRule(HomeActivity::class.java)
 
     @Test
     fun showMainActivityDefault() {

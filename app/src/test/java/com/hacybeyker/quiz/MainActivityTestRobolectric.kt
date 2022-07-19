@@ -4,7 +4,7 @@ import android.widget.TextView
 import androidx.lifecycle.Lifecycle
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.hacybeyker.quiz.ui.home.MainActivity
+import com.hacybeyker.quiz.ui.home.HomeActivity
 import org.junit.Assert
 import org.junit.Rule
 import org.junit.Test
@@ -14,7 +14,7 @@ import org.junit.runner.RunWith
 class MainActivityTestRobolectric {
 
     @get:Rule
-    val activityScenarioRule = ActivityScenarioRule(MainActivity::class.java)
+    val activityScenarioRule = ActivityScenarioRule(HomeActivity::class.java)
 
     @Test
     fun showActivityDefault() {

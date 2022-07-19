@@ -1,6 +1,6 @@
 # Project: Quiz
 
-![GithubActions](https://github.com/hacybeyker/Quiz/actions/workflows/android_publish.yml/badge.svg?branch=master) ![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=app-quiz-android&metric=alert_status)
+![GithubActions](https://github.com/hacybeyker/Quiz/actions/workflows/android_publish.yml/badge.svg?branch=master) ![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=hacybeyker-app-quiz-android&metric=alert_status)
 
 Quiz game, select the correct answer...earn points and have fun.
 
